@@ -9,7 +9,6 @@
   outline: none;
   border: none;
   text-transform: capitalize;
-  overflow-x: hidden;
 }
 
 html {
@@ -99,8 +98,8 @@ section {
 }
 
 .home .image img {
-  height: 50rem;
-  width: 50rem;
+  height: 70%;
+  width: 70%;
   border-radius: 50%;
 }
 
@@ -132,6 +131,7 @@ section {
 
 .btn {
   display: inline-block;
+  text-align: center;
   background: #1eacee;
   color: white;
   font-size: 1.5rem;
@@ -175,8 +175,8 @@ section {
 
 .about .info-container {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 50rem;
-          flex: 1 1 50rem;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .about .info-container .box-container {
@@ -188,7 +188,7 @@ section {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 .about .info-container .box-container .box {
@@ -214,18 +214,24 @@ section {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 .skill .box-container .box {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  padding: 2rem 3rem;
-  border-radius: 1rem;
+  padding: 1rem;
+  border-radius: .5rem;
   background: grey;
   -webkit-box-shadow: white;
           box-shadow: white;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 20rem;
+  width: 20rem;
 }
 
 .skill .box-container .box img {
@@ -234,9 +240,23 @@ section {
 }
 
 .skill .box-container .box h3 {
-  padding-top: 1rem;
+  padding-top: .5rem;
   font-size: 2rem;
-  color: #7f97e6;
+  color: white;
+  text-align: center;
+}
+
+.skill .box-container .box:hover {
+  background: #665f5f;
+}
+
+.skill .box-container .box:hover h3 {
+  color: #1eacee;
+}
+
+.skill a {
+  margin-left: 4%;
+  margin-top: 3rem;
 }
 
 .contact .row {
@@ -294,22 +314,61 @@ section {
 
 .contact .row .info-container .connect a {
   text-align: center;
-  height: 5rem;
-  font-size: 2rem;
-  border-radius: 50%;
-  background: grey;
-  color: #1eacee;
-  margin-right: 1rem;
+  font-size: 2.5rem;
+  line-height: 5rem;
+  background: black;
+  color: white;
+  margin-left: 4rem;
 }
 
 .contact .row .info-container .connect a:hover {
-  background: #7f97e6;
+  background: black;
+  color: #1eacee;
 }
 
 .contact .row form {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+}
+
+.contact .row form .inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact .row form .inputs textarea {
+  height: 20rem;
+  resize: none;
+}
+
+.contact .row form .inputs input, .contact .row form textarea {
+  border-radius: 5rem;
+  padding: 1.5rem;
+  font-size: 1.5rem;
+  color: white;
+  background: grey;
+  margin: 1rem;
+  width: 90%;
+}
+
+.contact .row form .btn {
+  margin-left: 45%;
+  padding: 1rem;
+  width: 6rem;
+  background: grey;
+  color: white;
+}
+
+.contact .row form .btn:hover {
+  background: #665f5f;
+  color: #1eacee;
 }
 
 @media (max-width: 1200px) {
@@ -341,6 +400,21 @@ section {
   }
   .heading {
     font-size: 3rem;
+  }
+  .skill .box-container {
+    height: 20rem;
+    width: 100%;
+  }
+  .skill .box-container .box {
+    height: 60%;
+    width: 60%;
+  }
+  .skill a {
+    margin-left: 30%;
+  }
+  .contact .row form .inputs input {
+    width: 100%;
+    margin: 1rem;
   }
 }
 

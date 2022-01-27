@@ -14,7 +14,7 @@
 <body>
     <!-- Navbar section starts -->
     <nav class="navbar">
-        <a href="index.html"><i class="fas fa-home"><span> Home </span></i></a>
+        <a href="Home.html"><i class="fas fa-home"><span> Home </span></i></a>
         <a href="About.html"><i class="fas fa-user"><span> About </span></i></a>
         <a href="Contact.html"><i class="fas fa-address-book"><span> Contact </span></i></a>
     </nav>
@@ -26,7 +26,7 @@
         <div class="row">
             <div class="info-container">
                 
-                <h1> Get in touch </h1>
+                <h1> <span>Get in</span> touch </h1>
                 
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel necessitatibus ducimus optio et ratione repudiandae, sed debitis impedit 
                     corporis nihil non esse dolore ullam doloremque animi illo numquam aliquid sapiente?</p>
@@ -59,26 +59,38 @@
                 </div>
                 
                 <div class="connect">
-                    <a href="www.instagram.com"><i class="fab fa-instagram"></i></a>
-                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.instagram.com/piyushpradhan__/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/piyush-pradhan-b6a080218/"><i class="fab fa-linkedin-in"></i></a>
                 </div>
             </div>
             
 
-            <form action="">
-                <div class="input">
-                    <input type="text" placeholder="Full name">
-                    <input type="number" placeholder="Phone number">
+            <form action="https://formsubmit.co/piyushpradhan1248@gmail.com" method="POST">
+
+            <!-- <form action=”mailto:contact@piyushpradhan1248@gmail.com” method=”POST” enctype=”multipart/form-data” name=”EmailForm”> -->
+                
+                <div class="inputs">
+                    <input type="text" size="20" placeholder="Full name" required>
                 </div>
 
-                <div class="input">
-                    <input type="email" placeholder="E-mail">
-                    <input type="text" placeholder="Subject">
+                <div class="inputs">
+                    <input type="email" size="40" placeholder="E-mail" required>
                 </div>
 
-                <textarea name="" placeholder="Type your message" id="" cols="30" rows="10"></textarea>
+                <div class="inputs">    
+                    <input type="text" size="40" placeholder="Subject" required>
+                </div>
+                
+                <div class="inputs">    
+                    <textarea name="" size="300" placeholder="Type your message" id="" cols="30" rows="10" required></textarea>
+                </div>  
+                
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/Contact.html">
+                
+                <input type="hidden" name="_captcha" value="false">
 
                 <input type="submit" class="btn" value="Send">
+            </form>
         </div>
     </section>
     <!-- contact section ends -->
