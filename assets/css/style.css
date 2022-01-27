@@ -255,7 +255,7 @@ section {
 }
 
 .skill a {
-  margin-left: 4%;
+  margin-left: 43%;
   margin-top: 3rem;
 }
 
@@ -280,6 +280,11 @@ section {
   font-size: 2.5rem;
   text-transform: uppercase;
   padding-bottom: 1rem;
+}
+
+.contact .row .info-container h1 span {
+  color: #1eacee;
+  text-transform: uppercase;
 }
 
 .contact .row .info-container p {
